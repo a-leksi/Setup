@@ -7,7 +7,7 @@ Create the installation media with [Fedora Media Writer]()
 ### Update
 Update, upgrade and reboot:
 ```bash
-rpm-ostree update -y && rpm-ostree upgrade -y && systemctl reboot
+rpm-ostree update && rpm-ostree upgrade && systemctl reboot
 ```
 
 ### Rebase - Universal Blue
