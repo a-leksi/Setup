@@ -8,6 +8,7 @@ Create the installation media with [Fedora Media Writer](https://fedoraproject.o
 
 ### Reboot 
 > You will need to reboot multiple time basically in each step.
+
 Reboot command:
 ```bash
 systemctl reboot
