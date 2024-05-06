@@ -1,13 +1,22 @@
 # Fedora Silverblue Setup
 
-Create the installation media with [Fedora Media Writer]()
+## Install
 
-## Post-install
+Create the installation media with [Fedora Media Writer](https://fedoraproject.org/fr/workstation/download)
+
+## Setup
+
+### Reboot 
+> You will need to reboot multiple time basically in each step.
+Reboot command:
+```bash
+systemctl reboot
+```
 
 ### Update
 Update, upgrade and reboot:
 ```bash
-rpm-ostree update && rpm-ostree upgrade && systemctl reboot
+rpm-ostree update && rpm-ostree upgrade
 ```
 
 ### Rebase - Universal Blue
@@ -20,17 +29,19 @@ rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/silverblue-main:la
 ```
 
 #### Ublue NVIDIA
-
 Rebase command:
 ```bash
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/silverblue-nvidia:latest
+```
+After reboot configure nvidia using ujust
+```bash
+ujust configure-nvidia
 ```
 
 ### Dash-to-dock
 Install dash-to-dock extension:
 ```bash
-rpm-ostree install \
-gnome-shell-extension-dash-to-dock \
+rpm-ostree install gnome-shell-extension-dash-to-dock
 ```
 
 #### VSCode
