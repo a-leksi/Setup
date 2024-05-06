@@ -16,7 +16,7 @@ Community Fedora Silverblue images - optionally with NVIDIA drivers built-in.
 #### Ublue Main
 Rebase command:
 ```bash
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/silverblue-main:latest
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/ublue-os/silverblue-main:latest
 ```
 
 #### Ublue NVIDIA
