@@ -66,6 +66,11 @@ Add this config to settings.json
 "docker.dockerPath": "/usr/bin/podman"
 ```
 
+Disable pip outside virtualenv
+```bash
+pip config set global.require-virtualenv True
+```
+
 
 
 
