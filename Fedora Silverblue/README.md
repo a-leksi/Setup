@@ -47,7 +47,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 Install VSCode, Podman, Python:
 ```bash
-rpm-ostree install code podman-docker python3-pip python3-virtualenv gnome-shell-extension-dash-to-dock
+rpm-ostree install code podman-docker python3-pip python3-virtualenv gnome-shell-extension-dash-to-dock git-lfs
 ```
 
 ### Config
