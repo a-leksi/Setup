@@ -47,7 +47,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 Install VSCode, Podman, Python:
 ```bash
-rpm-ostree install code podman-docker python3-pip python3-virtualenv gnome-shell-extension-dash-to-dock git-lfs
+rpm-ostree install code podman-docker podman-compose python3-pip python3-virtualenv gnome-shell-extension-dash-to-dock git-lfs
 ```
 
 ### Config
@@ -60,7 +60,7 @@ Enable the podman socket
 systemctl enable --now --user podman.socket
 ```
 
-Add this config to settings.json
+Add this config to settings.json in Vscode
 ```txt
 "docker.host": "unix:///run/user/1000/podman/podman.sock",
 "docker.dockerPath": "/usr/bin/podman"
